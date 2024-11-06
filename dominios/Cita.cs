@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace gestiones
+namespace dominios
 {
-    public class Class1
+    internal class Cita
     {
     }
 }
