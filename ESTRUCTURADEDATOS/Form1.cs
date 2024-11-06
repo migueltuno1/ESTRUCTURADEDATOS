@@ -24,18 +24,23 @@ namespace ESTRUCTURADEDATOS
 
         private void textBox1_Enter(object sender, EventArgs e)
         {
-            if (textBox1.Text == "C/I")
+            if (CEDULADEIDENTIDAD.Text == "C/I")
             {
-                textBox1.Text = "";
+                CEDULADEIDENTIDAD.Text = "";
             }
         }
 
         private void textBox1_Leave(object sender, EventArgs e)
         {
-            if (textBox1.Text == "")
+            if (CEDULADEIDENTIDAD.Text == "")
             {
-                textBox1.Text = "C/I";
+                CEDULADEIDENTIDAD.Text = "C/I";
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

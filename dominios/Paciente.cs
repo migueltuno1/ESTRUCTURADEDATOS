@@ -35,6 +35,10 @@ namespace dominios
 
 
         //creamos los pacientes directamente para hacer la prueba
+        public String nombre1 = "Miguel";
+        public String nombre2 = "Maximo";
+        public String nombre3 = "Emerson";
+
         Paciente paciente1 = new Paciente(1, "Miguel", "Tuno Loayza", "14205561", DateTime.Parse("17-06-2005"));
         Paciente paciente2 = new Paciente(1, "Maximo", "Tuno Loayza", "14205560", DateTime.Parse("29-06-2005"));
         Paciente paciente3 = new Paciente(1, "Emerson", "Cabral Moreno", "9478236", DateTime.Parse("19-02-2005"));
