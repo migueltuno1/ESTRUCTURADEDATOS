@@ -52,26 +52,14 @@ namespace dominios
             string ci;
             switch (cedula)
             {
-                case "14205561":
-
-                    Paciente paciente1 = new Paciente(1, "Miguel", "Tuno Loayza", "14205561", DateTime.Parse("17-06-2005"));
-                    datos += "14205561";
+                case "14205561":datos = "14205561";
                     break;
 
-                case "14205560":
-                    Paciente paciente2 = new Paciente(1, "Maximo", "Tuno Loayza", "14205560", DateTime.Parse("29-06-2005"));
-
-                    datos += "14205560";
+                case "14205560":datos = "14205560";
                     break;
 
-                case "5706488":
-                    Paciente paciente3 = new Paciente(1, "Emerson", "Cabral Moreno", "9478236", DateTime.Parse("19-02-2005"));
-                    datos += "57064886";
+                case "5706488":datos = "57064886";
                     break;
-                default:
-                    datos += "no existe";
-                    break;
-
             }
             return datos;
         }

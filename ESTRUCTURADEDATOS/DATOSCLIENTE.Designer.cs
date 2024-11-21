@@ -55,10 +55,10 @@
             this.JHON.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.JHON.Location = new System.Drawing.Point(65, 145);
             this.JHON.Name = "JHON";
-            this.JHON.Size = new System.Drawing.Size(934, 77);
+            this.JHON.Size = new System.Drawing.Size(1165, 77);
             this.JHON.TabIndex = 1;
             this.JHON.TabStop = true;
-            this.JHON.Text = "JHON OSCAR (PARTICULAR)";
+            this.JHON.Text = "JHON OSCAR (MEDICINA GENERAL)";
             this.JHON.UseVisualStyleBackColor = true;
             this.JHON.CheckedChanged += new System.EventHandler(this.JHON_CheckedChanged);
             // 

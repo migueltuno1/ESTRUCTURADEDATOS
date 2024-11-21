@@ -29,13 +29,44 @@ namespace dominios
         public string CI_Doctor { get => cI_Doctor; set => cI_Doctor = value; }
         public string Especialidad { get => especialidad; set => especialidad = value; }
 
+    }
 
+    public class designar
+    {
+        private int num;
 
-        // crear medicos
+        public int Num { get => num; set => num = value; }
+        public string designarr(int codigo)
+        {
+            this.num = num;
+           
+            string codigos="";
 
-        Medico doctor1 = new Medico(1, "Zora", "Loayza", "478952", "Medicina General");
-        Medico doctor2 = new Medico(2, "Leandro", "Tuno Loayza", "123456", "Odontologo");
-        Medico doctor3 = new Medico(3, "Maikol", "Rivero", "986354", "Traumatologia");
+            switch (codigo)
+            {
+                case 1:
+                    Medico doctor1 = new Medico(1, "DR. JON OSCAR", "PAREDES BURGOA", "1234567", "TRAUMATOLOGO");
+                    codigos = doctor1.ToString();
+                    break;
+                case 2:
+                    Medico doctor2 = new Medico(2, "DR. RODRIGO", " JORDAN SALVATIERRA", "987456", "NEUROLOGO");
+                    codigos = doctor2.ToString(); 
+                    break;
+                case 3:
+                    Medico doctor3 = new Medico(3, "DR. DIEGO", "ARTEAGA RIVERO", "123698", "TRAUMATOLOGO");
+                    codigos = doctor3.ToString();
+                    break;
+                case 4:
+                    Medico doctor4 = new Medico(3, "DR. JOSE", "DUMAY", "745632", "CARDIOLOGO");
+                    codigos = doctor4.ToString();
+                    break;
+                default:
+                    break;
+            }
+        return codigos;
 
+        }
+
+        
     }
 }
