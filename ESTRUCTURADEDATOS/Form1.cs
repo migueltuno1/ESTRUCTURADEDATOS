@@ -1,4 +1,5 @@
-﻿using System;
+﻿using dominios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -40,7 +41,9 @@ namespace ESTRUCTURADEDATOS
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Paciente pa;
+            pa.
+            if(CEDULADEIDENTIDAD.Text = )
         }
     }
 }
