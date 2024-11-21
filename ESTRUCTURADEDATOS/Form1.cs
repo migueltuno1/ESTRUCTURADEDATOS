@@ -17,6 +17,10 @@ namespace ESTRUCTURADEDATOS
         {
             InitializeComponent();
         }
+        public struct Dci
+        {
+            public string cedula;
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -45,7 +49,10 @@ namespace ESTRUCTURADEDATOS
 
             if (CEDULADEIDENTIDAD.Text == pacientetes.pcliente(CEDULADEIDENTIDAD.Text))
             {
-                DATOSCLIENTE dATOSCLIENTE = new DATOSCLIENTE();
+                Dci informacion;
+                informacion.cedula = CEDULADEIDENTIDAD.Text;
+
+                DATOSCLIENTE dATOSCLIENTE = new DATOSCLIENTE(informacion);
                 dATOSCLIENTE.Show();
                 Hide();
             }

@@ -64,9 +64,9 @@ namespace dominios
                     datos += "14205560";
                     break;
 
-                case "9478236":
+                case "5706488":
                     Paciente paciente3 = new Paciente(1, "Emerson", "Cabral Moreno", "9478236", DateTime.Parse("19-02-2005"));
-                    datos += "9478236";
+                    datos += "57064886";
                     break;
                 default:
                     datos += "no existe";
