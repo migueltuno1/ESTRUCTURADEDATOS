@@ -36,7 +36,8 @@
             this.CEDULADEIDENTIDAD = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.linkagregar = new System.Windows.Forms.LinkLabel();
+            this.desea = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -124,7 +125,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Purple;
-            this.button1.Location = new System.Drawing.Point(12, 730);
+            this.button1.Location = new System.Drawing.Point(12, 669);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(976, 83);
             this.button1.TabIndex = 3;
@@ -132,18 +133,30 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // linkLabel1
+            // linkagregar
             // 
-            this.linkLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(804, 936);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(376, 55);
-            this.linkLabel1.TabIndex = 0;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Mas informacion";
+            this.linkagregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.linkagregar.AutoSize = true;
+            this.linkagregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkagregar.Location = new System.Drawing.Point(324, 936);
+            this.linkagregar.Name = "linkagregar";
+            this.linkagregar.Size = new System.Drawing.Size(376, 55);
+            this.linkagregar.TabIndex = 0;
+            this.linkagregar.TabStop = true;
+            this.linkagregar.Text = "Mas informacion";
+            // 
+            // desea
+            // 
+            this.desea.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.desea.AutoSize = true;
+            this.desea.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.desea.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.desea.Location = new System.Drawing.Point(423, 881);
+            this.desea.Name = "desea";
+            this.desea.Size = new System.Drawing.Size(177, 55);
+            this.desea.TabIndex = 4;
+            this.desea.Text = "Desea ";
+            this.desea.Visible = false;
             // 
             // Form1
             // 
@@ -151,7 +164,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.ClientSize = new System.Drawing.Size(1000, 1000);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.desea);
+            this.Controls.Add(this.linkagregar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.CEDULADEIDENTIDAD);
@@ -181,7 +195,8 @@
         private System.Windows.Forms.TextBox CEDULADEIDENTIDAD;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel linkagregar;
+        private System.Windows.Forms.Label desea;
     }
 }
 

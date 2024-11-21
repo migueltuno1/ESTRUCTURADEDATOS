@@ -41,9 +41,21 @@ namespace ESTRUCTURADEDATOS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Paciente pa;
-            pa.
-            if(CEDULADEIDENTIDAD.Text = )
+            pacientetes pacientetes = new pacientetes();
+
+            if (CEDULADEIDENTIDAD.Text == pacientetes.pcliente(CEDULADEIDENTIDAD.Text))
+            {
+                DATOSCLIENTE dATOSCLIENTE = new DATOSCLIENTE();
+                dATOSCLIENTE.Show();
+                Hide();
+            }
+            else 
+            {
+                desea.Visible = true;
+                linkagregar.Text = "¿registrarse?";
+            }
+           
+            
         }
     }
 }

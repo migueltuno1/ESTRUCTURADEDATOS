@@ -30,32 +30,43 @@ namespace dominios
         public string CI_Paciente { get => cI_Paciente; set => cI_Paciente = value; }
         public DateTime FechaNac_Paciente { get => fechaNac_Paciente; set => fechaNac_Paciente = value; }
 
+            
+    }
 
 
 
 
 
-        //creamos los pacientes directamente para hacer la prueba
-        
-        public string pacientetes(string cliente) {
+
+
+    //creamos los pacientes directamente para hacer la prueba
+
+    public class pacientetes
+    {
+        private string cedula;
+
+        public  string pcliente(string cedula)
+        {
+            this.cedula = cedula;
             string datos = "";
-            switch (cliente)
+            string ci;
+            switch (cedula)
             {
                 case "14205561":
 
                     Paciente paciente1 = new Paciente(1, "Miguel", "Tuno Loayza", "14205561", DateTime.Parse("17-06-2005"));
-                    datos += paciente1.ToString();
+                    datos += "14205561";
                     break;
 
                 case "14205560":
                     Paciente paciente2 = new Paciente(1, "Maximo", "Tuno Loayza", "14205560", DateTime.Parse("29-06-2005"));
 
-                    datos += paciente2.ToString();
+                    datos += "14205560";
                     break;
 
                 case "9478236":
                     Paciente paciente3 = new Paciente(1, "Emerson", "Cabral Moreno", "9478236", DateTime.Parse("19-02-2005"));
-                    datos += paciente3.ToString();
+                    datos += "9478236";
                     break;
                 default:
                     datos += "no existe";
@@ -64,9 +75,10 @@ namespace dominios
             }
             return datos;
         }
-            
-    }
-        
+
+        public string Cdula { get => cedula; set => cedula = value; }
        
+    }
+
 }
 
